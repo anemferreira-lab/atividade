@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Usuários - Firestore Avançado</title>
+</head>
+<body>
+  <h1>Gerenciador de Usuários (CRUD & Realtime)</h1>
+  
+  <div>
+    <h2>Adicionar Usuário</h2>
+    <input type="text" id="name" placeholder="Nome">
+    <input type="number" id="age" placeholder="Idade">
+    <button onclick="addData()">Adicionar</button>
+  </div>
+
+  <div>
+    <h2>Lista de Usuários (Sincronizado)</h2>
+    <ul id="data-list"></ul>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/12.19.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
